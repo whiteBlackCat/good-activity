@@ -1,0 +1,128 @@
+page {
+  font-size: 30rpx;
+  color: #4a4a4a;
+}
+
+.body {
+  padding: 0 25rpx;
+  overflow: hidden;
+}
+
+.search-wrap {
+  padding: 30rpx;
+  background: #0037ff;
+}
+
+.search {
+  height: 70rpx;
+  background: #f9f9f9;
+  border-radius: 5rpx;
+}
+
+.search .prepend {
+  float: left;
+  width: 32rpx;
+  height: 32rpx;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  margin-right: 32rpx;
+}
+
+/*overflow:hidden形成的BFC未能阻止margin穿透?  */
+
+.search input {
+  height: 100%;
+  /* margin-left: 32rpx; */
+  overflow: hidden;
+}
+
+.input-placeholder {
+  color: #c7c7c7;
+}
+
+/*banner  */
+
+.banner {
+  margin-top: 20rpx;
+}
+
+.banner>swiper {
+  /* width: 750rpx; */
+  width: 100%;
+  height: 190rpx;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+  background: #eee;
+}
+
+/*导航  */
+
+.catagory {
+  /* height: 200rpx; */
+  padding: 20rpx 0;
+  justify-content: flex-start;
+}
+
+.catagory .ul{
+  flex-wrap: wrap;
+}
+.catagory .ul .li{
+  width: 16%;
+  margin: 10rpx 1.66%;
+  text-align: center;
+}
+.catagory .li image{
+  width: 98rpx;
+  height: 98rpx;
+  margin: auto;
+  background: #9b9b9b;
+  color: #f9f9f9;
+  border-radius: 50%;
+}
+.catagory .li view{
+  font-size: 26rpx;
+  color: #0f0f0f;
+}
+.catagory .li.on view{
+  color: pink;
+}
+/* 活动列表  */
+
+.activity {
+  height: 290rpx;
+}
+
+.activity .headimg {
+  height: 160rpx;
+}
+
+.activity .headimg>image {
+  width: 100%;
+  height: 100%;
+}
+
+.activity .title {
+  margin: 10rpx auto;
+  font-size: 38rpx;
+  color: #333;
+  text-indent: 0.28em;
+}
+
+.activity .des {
+  padding: 0 20rpx;
+  justify-content: flex-start;
+  font-size: 30rpx;
+  color: #4a4a4a;
+}
+
+.activity .des>view {
+  padding: 5rpx 10rpx;
+}
+
+.bg-p {
+  border-radius: 10rpx;
+  color: #fff;
+}

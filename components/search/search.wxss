@@ -1,0 +1,24 @@
+.search {
+  height: 70rpx;
+  background: #f9f9f9;
+  border-radius: 5rpx;
+}
+
+.search .prepend {
+  float: left;
+  width: 32rpx;
+  height: 32rpx;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  margin-right: 32rpx;
+}
+/*overflow:hidden形成的BFC未能阻止margin穿透?  */
+.search input {
+  height: 100%;
+  /* margin-left: 32rpx; */
+  overflow: hidden;
+}
+
+.input-placeholder{
+  color: #c7c7c7;
+}

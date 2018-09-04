@@ -1,0 +1,216 @@
+page {
+  font-family: 'Helvetica Neue',
+                 Helvetica,
+                 Arial,
+                 'Microsoft Yahei',
+                 'Hiragino Sans GB',
+                 'Heiti SC',
+                 'WenQuanYi Micro Hei',
+                 sans-serif;
+  font-size: 24rpx;
+}
+
+/*布局  */
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex >view {
+  box-sizing: border-box;
+}
+
+/*渲染后的节点没有允许外的属性  */
+
+/* .flex[col=3] > view {
+  width: 33.33%;
+}
+
+.flex[align=center] > view {
+  align-content: center;
+}
+
+.flex[justify=center] > view {
+  justify-content: center;
+} */
+
+/* 所以只是看看 */
+
+.f-l {
+  float: left;
+}
+
+.f-r {
+  float: right;
+}
+
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.of-h {
+  overflow: hidden;
+}
+
+/*宽度  */
+
+w-full {
+  width: 100%;
+}
+
+.h100 {
+  height: 100%;
+}
+
+/*边距  */
+
+.mb-10 {
+  margin-bottom: 10rpx;
+}
+
+.mt-20 {
+  margin-top: 20rpx;
+}
+
+/* 字体样式  */
+
+/*颜色  */
+
+.red {
+  color: #e50011;
+}
+
+.blue {
+  color: #368aca;
+}
+
+.f-b {
+  color: #9f9fa0;
+}
+
+/*大小  */
+
+.f-34 {
+  font-size: 34rpx;
+}
+
+.ta-c {
+  text-align: center;
+}
+
+/* 重置默认样式  */
+
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+}
+
+icon {
+  height: 0;
+}
+
+.button-hover {
+  opacity: 0.7 !important;
+}
+
+/* 背景样式  */
+
+.bg-p {
+  background: pink;
+}
+
+.bg-g {
+  background: gray;
+}
+
+.bg-b {
+  background: blue;
+}
+
+.bg-w {
+  background: white;
+}
+
+/* 图标样式  */
+
+.icon {
+  display: inline-block;
+}
+
+.icon>image {
+  width: 100%;
+  height: 100%;
+}
+
+/* 一些特殊样式  */
+
+/* 加号  */
+
+.plus {
+  display: inline-block;
+  width: 32rpx;
+  height: 32rpx;
+  line-height: 32rpx;
+  background: #fff;
+  font-size: 36rpx;
+  color: #368aca;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.no-border{
+  border:none!important;
+}
+
+/* 指数  */
+
+.sup {
+  position: relative;
+  display: inline-block;
+  font-size: 0.5em;
+  top: -.8em;
+  left: -.5em;
+}
+
+/*容器  */
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+
+/*渐变种类-方向-颜色距离*/
+
+.linear-h-w {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 0, 0) 100%);
+}
+
+/*表单组合  */
+
+.input-wrap-inline {
+  display: inline-block;
+}
+
+.input-wrap-inline .prepend, .input-wrap .prepend {
+  float: left;
+}
+
+.input-wrap-inline .apend, .input-wrap .apend {
+  float: right;
+}

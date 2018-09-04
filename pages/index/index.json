@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "i-button": "../../dist/button/index",
+    "search": "../../components/search/search"
+  }
+}

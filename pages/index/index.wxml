@@ -1,0 +1,54 @@
+<!--顶部搜索  -->
+<view class='search-wrap'>
+  <search search="search" prepend="prepend" bindupdate="search"></search>
+</view>
+
+<view class='body'>
+  <!--轮播  -->
+  <view class='banner'>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="#d8d8d8" indicator-active-color="#ffdc00" circular="{{true}}">
+      <block wx:for="{{imgUrls}}" wx:key="unique">
+        <swiper-item>
+          <image src="{{imgPrefix + item.slide_pic}}" class="slide-image"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <!--类目  -->
+  <view class='catagory'>
+    <view class='flex ul'>
+      <block wx:for="{{catagoryList}}" wx:key="unique">
+        <view 
+        class='li {{index==catagoryIndex?"on":""}}' 
+        data-code="{{item.code}}"
+        data-index='{{index}}' 
+        bindtap='catagoryChange'
+        >
+          <image src='{{item.icon}}'>图标</image>
+          <view>{{item.label}}</view>
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <!--活动列表  -->
+  <view class='wrap'>
+    <block wx:for="{{activities}}" wx:key="unique">
+      <view class='activity' data-code="{{item.hd_activity_code}}" bindtap='goActivityDetail'>
+        <view class='headimg'>
+          <image src='{{item.hd_activity_toppic}}'></image>
+        </view>
+        <view class='title'>{{item.hd_activity_title}}</view>
+        <view class='des flex'>
+          <view class='bg-p'>{{item.hd_activity_cost}}</view>
+          <view>{{item.hd_activity_time}}</view>
+          <text>·</text>
+          <!-- 发布者代码??? -->
+          <view>{{item.hd_activity_code}}</view>
+        </view>
+      </view>
+    </block>
+    <view hidden="{{activities.length}}" class='ta-c' style='margin:25rpx;'>近期没有人发布过活动呢</view>
+  </view>
+</view>

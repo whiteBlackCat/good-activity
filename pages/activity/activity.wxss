@@ -1,0 +1,141 @@
+page {
+  font-size: 28rpx;
+  color: #999;
+}
+
+.wrap {
+  width: 690rpx;
+  margin: auto;
+}
+
+.banner {
+  height: 160rpx;
+}
+
+.banner>image {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  margin: 10rpx auto;
+  padding: 0 20rpx;
+  line-height: 52rpx;
+  font-size: 38rpx;
+  font-weight: bold;
+  color: #333;
+}
+
+.view {
+  margin: 6rpx auto;
+  font-size: 30rpx;
+  color: #4a4a4a;
+  line-height: 42rpx;
+}
+
+.icon {
+  display: inline-block;
+}
+
+.icon-view {
+  width: 10rpx;
+  height: 10rpx;
+}
+
+.view-box .invite-button {
+  font-size: 30rpx;
+  line-height: 50rpx;
+  color: #4bd1db;
+  border-color: transparent;
+}
+
+.sponsor {
+  margin-top: 74rpx;
+  height: 160rpx;
+  text-align: center;
+  /* padding: 20rpx; */
+  border-bottom: 1rpx solid #ccc;
+}
+
+.sponsor .avatar {
+  width: 102rpx;
+  height: 102rpx;
+  background: #ccc;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.sponsor .name {
+  margin-top: 18rpx;
+  font-size: 26rpx;
+  line-height: 36rpx;
+  color: #9b9b9b;
+}
+
+.bb-1 {
+  border-bottom: 1rpx solid #ccc;
+}
+
+.sign-up-number {
+  position: relative;
+  width: 142rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  color: #4bd1db;
+  text-align: center;
+}
+
+.sign-up-number::before {
+  position: absolute;
+  content: '';
+  width: 2rpx;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background: #4bd1db;
+}
+
+.sign-up-row1 {
+  height: 166rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+
+.avatar-box {
+  width: 548rpx;
+  padding: 0 20rpx;
+}
+
+.avatar-box .avatar {
+  position: relative;
+  display: inline-block;
+  width: 70rpx;
+  height: 70rpx;
+  margin: 0 4rpx;
+  background: #ccc;
+  border-radius: 50%;
+}
+
+.icon-ticket, .icon-clock, .icon-posision {
+  width: 10rpx;
+  height: 20rpx;
+}
+
+.sign-in {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+.sign-in button{
+  background: #4BD1DB;
+}
+.li{
+  font-size: 30rpx;
+  line-height: 42rpx;
+  color: #4a4a4a;
+  padding: 24rpx 0;
+  border-bottom: 2rpx solid #ddd;
+}
+
+.AC .of-h, .QZ .of-h{
+  min-height: 84rpx;
+}

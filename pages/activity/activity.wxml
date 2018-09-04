@@ -1,0 +1,91 @@
+<view class='wrap'>
+  <!--顶部banner  -->
+  <view class='banner bg-gray'>
+    <image src='{{detailData.toppic}}'></image>
+  </view>
+
+  <!--标题 -->
+  <view class='title'>
+    {{detailData.title}}
+  </view>
+
+  <!--访问数量   这比较难搞 -->
+  <view class='view-box clearfix bb-1'>
+    <view class='f-l view'>
+      <image class='icon icon-view' src=''></image>
+      {{detailData.number}}
+    </view>
+    <!-- <view class='f-r'> -->
+    <button class='invite-button f-r' type='mini' plain="{{true}}" size='mini'>邀请好友</button>
+    <!-- </view> -->
+  </view>
+
+  <!--发布者  -->
+  <view class='sponsor flex'>
+    <view class='h100'>
+      <image class='avatar'></image>
+      <view class='name'>发布者</view>
+    </view>
+  </view>
+
+  <!-- 具体 -->
+  <view>
+    <view class='sign-up-row1 flex'>
+      <view class='sign-up-number '>
+        9人报名
+      </view>
+      <view class='avatar-box'>
+        <image wx:for="{{joiner}}" wx:key="unique" class='avatar' src='{{item}}'></image>
+        <!-- <image class='right-tri' src='/images/icon-23.png'></image> -->
+      </view>
+    </view>
+    <view class='ul clearfix'>
+      <view class="li">
+        <view class='f-l'>
+          <image class='icon icon-ticket' src=''></image>
+        </view>
+        <view class="of-h">活动费用: 免费</view>
+      </view>
+      <view class="li">
+        <view class='f-l'>
+          <image class='icon icon-clock' src=''></image>
+        </view>
+        <view class="of-h">活动时间: 2018/07/29</view>
+      </view>
+      <view class="li">
+        <view class='f-l'>
+          <image class='icon icon-posision' src=''></image>
+        </view>
+        <view class="of-h">活动地点: 瑞银茶行(安徽省地方可交换)</view>
+      </view>
+      <!--活动详情  -->
+      <view class="AC li">
+        <view class='f-l'>
+          <image class='icon icon-posision' src=''></image>
+        </view>
+        <view class="f-l">活动详情:</view>
+        <view class='of-h'>
+          测试详情测试详情测试详情测试详情测试详情测试详情测试详情测试详情测试详情
+        </view>
+      </view>
+
+      <!-- 问答区 -->
+      <view class='QZ li no-border'>
+        <view class='f-l'>
+          <image class='icon icon-posision' src=''></image>
+        </view>
+        <view class="f-l">问答区:</view>
+        <view class='of-h'>
+          test text;test text;test text;test text;test text;test text;test text;test text;
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view style="height:92rpx;"></view>
+
+<view class='sign-in'>
+  <button>我要报名</button>
+</view>
+<!-- <i-button type="primary" bind:click="handleClick">这是一个按钮</i-button> -->

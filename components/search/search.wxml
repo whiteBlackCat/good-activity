@@ -1,0 +1,6 @@
+<view class='search clearfix'>
+  <view class='prepend'>
+    <icon type='search' size='16'></icon>
+  </view>
+  <input class='input' placeholder='{{placeholderText}}' confirm-type='search' bindconfirm='search'></input>
+</view>
