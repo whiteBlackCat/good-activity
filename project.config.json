@@ -33,13 +33,36 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
+			"current": 4,
 			"list": [
 				{
 					"id": 0,
 					"name": "活动",
 					"pathName": "pages/activity/activity",
 					"query": "sessioncode=73f3b8baacec6a765c063c8745cac4e5&acode=4376928051"
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/self/self",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "发布活动",
+					"pathName": "pages/publish-activity/publish-activity",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "发布活动2",
+					"pathName": "pages/publish-activity/publish-activity-step2/publish-activity-step2",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "注册",
+					"pathName": "pages/register/register"
 				}
 			]
 		}

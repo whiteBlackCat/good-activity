@@ -1,1 +1,59 @@
-/* pages/self/self.wxss */
+page {
+  background: #efeff4;
+}
+
+.avatar-box {
+  padding: 0 50rpx;
+  height: 270rpx;
+  justify-content: space-between;
+  background: #0037ff;
+}
+
+.avatar {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.pa {
+  width: 500rpx;
+  font-size: 34rpx;
+  line-height: 54rpx;
+  color: #fff;
+}
+
+.participate {
+  margin-top: 28rpx;
+}
+
+.ul {
+  border-top: 1rpx solid #ddd;
+  font-size: 28rpx;
+  color: #4a4a4a;
+  background: #fafafa;
+}
+
+.li {
+  padding: 31rpx 0;
+  border-bottom: 1rpx solid #ddd;
+}
+
+.li .f-l {
+  margin-left: 80rpx;
+}
+
+.li .f-r {
+  margin-right: 40rpx;
+}
+
+.tri {
+  width: 20rpx;
+  height: 30rpx;
+}
+
+.num {
+  margin-right: 20rpx;
+  line-height: 38rpx;
+  vertical-align: middle;
+}

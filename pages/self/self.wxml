@@ -1,2 +1,57 @@
-<!--pages/self/self.wxml-->
-<text>pages/self/self.wxml</text>
+<view class="avatar-box flex">
+  <view class='avatar'>
+    <open-data type="userAvatarUrl"></open-data>
+  </view>
+  <view class='pa'>
+    <view>
+      <open-data type="userNickName"></open-data>
+      <open-data type="userGender" lang="zh_CN" style="margin-left:15rpx;"></open-data>
+    </view>
+    <view class='p'>
+      <view class='tag'>v2</view>
+    </view>
+  </view>
+</view>
+
+<view class='participate ul'>
+  <view class='li clearfix'>
+    <view class='f-l'>参与的活动</view>
+    <view class='f-r'>
+      <text class='num'>1</text>
+      <image class='tri v-mid' src='/images/icon-04.png'></image>
+    </view>
+  </view>
+  <view class='li clearfix'>
+    <view class='f-l'>我的嗮图</view>
+    <view class='f-r'>
+      <text class='num'>1</text>
+      <image class='tri v-mid' src='/images/icon-04.png'></image>
+    </view>
+  </view>
+  <view class='li clearfix'>
+    <view class='f-l'>我的提问</view>
+    <view class='f-r'>
+      <text class='num'>1</text>
+      <image class='tri v-mid' src='/images/icon-04.png'></image>
+    </view>
+  </view>
+</view>
+
+<view class='participate ul'>
+  <navigator url='../publish-activity/publish-activity'>
+    <view class='li clearfix'>
+      <view class='f-l'>我要发布活动</view>
+      <view class='f-r'>
+        <text class='num'>1</text>
+        <image class='tri v-mid' src='/images/icon-04.png'></image>
+      </view>
+    </view>
+  </navigator>
+  <view class='li clearfix'>
+    <view class='f-l'>关于</view>
+    <view class='f-r'>
+      <text class='num'>1</text>
+      <image class='tri v-mid' src='/images/icon-04.png'></image>
+    </view>
+  </view>
+</view>

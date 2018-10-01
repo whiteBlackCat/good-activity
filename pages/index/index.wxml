@@ -21,12 +21,12 @@
       <block wx:for="{{catagoryList}}" wx:key="unique">
         <view 
         class='li {{index==catagoryIndex?"on":""}}' 
-        data-code="{{item.code}}"
+        data-code="{{item.hd_types_code}}"
         data-index='{{index}}' 
         bindtap='catagoryChange'
         >
-          <image src='{{item.icon}}'>图标</image>
-          <view>{{item.label}}</view>
+          <image src='{{item.hd_types_pic}}'>图标</image>
+          <view>{{item.hd_types_name}}</view>
         </view>
       </block>
     </view>
@@ -44,8 +44,7 @@
           <view class='bg-p'>{{item.hd_activity_cost}}</view>
           <view>{{item.hd_activity_time}}</view>
           <text>·</text>
-          <!-- 发布者代码??? -->
-          <view>{{item.hd_activity_code}}</view>
+          <view>{{item.hd_activity_username}}</view>
         </view>
       </view>
     </block>

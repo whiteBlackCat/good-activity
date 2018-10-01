@@ -3,7 +3,10 @@
     "pages/index/index",
     "pages/activity/activity",
     "pages/activity/sign-up/sign-up",
-    "pages/self/self"
+    "pages/publish-activity/publish-activity",
+    "pages/publish-activity/publish-activity-step2/publish-activity-step2",
+    "pages/self/self",
+    "pages/register/register"
   ],
   "window": {
     "backgroundTextStyle": "light",

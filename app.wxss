@@ -108,6 +108,15 @@ w-full {
   text-align: center;
 }
 
+.full {
+  width: 100%;
+  height: 100%;
+}
+
+.v-mid {
+  vertical-align: middle;
+}
+
 /* 重置默认样式  */
 
 textarea {
@@ -169,8 +178,8 @@ icon {
   border-radius: 50%;
 }
 
-.no-border{
-  border:none!important;
+.no-border {
+  border: none !important;
 }
 
 /* 指数  */
@@ -207,10 +216,18 @@ icon {
   display: inline-block;
 }
 
+/* .input-wrap {
+  overflow: hidden;
+} */
+
 .input-wrap-inline .prepend, .input-wrap .prepend {
   float: left;
 }
 
-.input-wrap-inline .apend, .input-wrap .apend {
+.input-wrap-inline .append, .input-wrap .append {
   float: right;
+}
+
+.input-wrap-inline .input, .input-wrap .input {
+  overflow: hidden;
 }

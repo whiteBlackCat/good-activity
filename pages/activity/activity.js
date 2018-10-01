@@ -1,21 +1,16 @@
-// import api from '../../utils/api.js'
-
-const {
-  log
-} = console
-
+const app = getApp()
 Page({
   data: {
     detailData: {
-      title:'标题',
-      number:12
+      title: '标题',
+      number: 12
     },
     commlist: {},
     applylist: {},
-    joiner:[1,2,3,4,5]
+    joiner: [1, 2, 3, 4, 5]
   },
   onLoad: function(options) {
-    // log(options)
+    this.code = options.code
     // let {
     //   sessioncode,
     //   acode
@@ -37,5 +32,28 @@ Page({
     //     }
     //   }
     // })
+  },
+  onReady(){
+    this._getActivityDetail(this.code)
+  },
+  signIn() {
+    // 若已经登录则直接跳转
+    // 由于可以收集号码注册 sessionCode不再是唯一依据
+    let sessionCode = wx.getStorageSync('session_key')
+    if (sessionCode) {
+      wx.navigateTo({
+        url: '',
+      })
+    } else {
+      wx.navigateTo({
+        url: '../register/register',
+      })
+    }
+  },
+  _getActivityDetail(code) {
+    let sessioncode = wx.getStorageSync('session_key')
+    app.$http.get(`/V1wxeventsdetails/${sessioncode}/${code}`).then(res=>{
+      debugger
+    })
   }
 })
