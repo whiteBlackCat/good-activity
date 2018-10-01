@@ -1,0 +1,49 @@
+<view class='form'>
+  <form bindsubmit='submit'>
+    <view class='form-item'>
+      <view class='input-wrap'>
+        <view class='prepend'>分类</view>
+        <view class='append'>
+          <image class='tri' src='/images/icon-04.png'></image>
+        </view>
+        <view class='input'>
+          <picker range='{{range}}' value="{{index}}" bindchange='pickerChange'>{{range[index]}}</picker>
+        </view>
+      </view>
+    </view>
+    <view class='form-item'>
+      <view class='input-wrap'>
+        <view class='prepend'>活动费用</view>
+        <view class='append'>元</view>
+        <view class='input'>
+          <input name="formValue1" type='number' placeholder='请输入活动费用'></input>
+        </view>
+      </view>
+    </view>
+    <view class='form-item'>
+      <view class='input-wrap'>
+        <view class='prepend'>活动人数</view>
+        <view class='append'>位</view>
+        <view class='input'>
+          <input name="formValue2" type='number' placeholder='请输入活动人数'></input>
+        </view>
+      </view>
+    </view>
+    <view class='form-item date'>
+      <view class='input-wrap'>
+        <view class='prepend'>活动时间</view>
+        <view class='append'>
+          <image class='tri' src='/images/icon-04.png'></image>
+        </view>
+        <view class='input'>
+          <picker mode="date" value="{{date}}" start="{{start}}" end="{{end}}" bindchange='dateChange'>{{date}}</picker>
+        </view>
+      </view>
+    </view>
+    <view class='form-item no-border'>
+      <view class='btn-wrap'>
+        <button class='submit' type='primary' form-type='submit'>下一步</button>
+      </view>
+    </view>
+  </form>
+</view>

@@ -1,0 +1,54 @@
+.form {
+  margin-top: 350rpx;
+  padding: 0 30rpx;
+}
+
+.form-item {
+  font-size: 32rpx;
+  color: #4a4a4a;
+}
+
+.form-item:first-child .input-wrap {
+  border-top: 1rpx solid #ddd;
+}
+
+.input-wrap {
+  padding: 10rpx 0;
+  border-bottom: 1rpx solid #ddd;
+}
+
+.prepend {
+  margin-left: 30rpx;
+  width: 180rpx;
+}
+
+.append {
+  margin-right: 20rpx;
+  margin-left: 30rpx;
+  line-height: 52rpx;
+}
+
+.input {
+  text-align: right;
+  line-height: 53rpx;
+}
+
+.tri {
+  width: 20rpx;
+  height: 30rpx;
+  margin-top: 8rpx;
+}
+
+/* .date .input {
+  text-align: left;
+  padding-right: 80rpx;
+} */
+
+.form-item .submit {
+  margin-top: 150rpx;
+  height: 86rpx;
+  background: #4bd1db;
+  font-size: 34rpx;
+  line-height: 86rpx;
+  border-radius: 43rpx;
+}

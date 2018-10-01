@@ -1,0 +1,88 @@
+page {
+  background: #efefef;
+}
+
+.box {
+  position: absolute;
+  width: 570rpx;
+  height: 500rpx;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.title {
+  height: 106rpx;
+  background: #4bd1db;
+  line-height: 106rpx;
+  font-size: 28rpx;
+  color: #333;
+  text-align: center;
+}
+
+.content {
+  height: 400rpx;
+  background: #fff;
+  overflow: hidden;
+}
+
+.avatar {
+  width: 102rpx;
+  height: 102rpx;
+  margin: 40rpx auto 0;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.nickname {
+  margin-top: 16rpx;
+  color: #9b9b9b;
+  font-size: 28rpx;
+  text-align: center;
+}
+
+.btn-group {
+  margin-top: 50rpx;
+}
+
+.btn-group button {
+  width: 434rpx;
+  height: 62rpx;
+  line-height: 62rpx;
+  border: none;
+  font-size: 28rpx;
+}
+
+.btn-group button:first-child {
+  background: #4bd1db;
+  color: #333;
+}
+
+.btn-group button:last-child {
+  background: transparent;
+  color: #666;
+}
+
+.form-item {
+  margin: 0 48rpx;
+  padding: 9rpx 0;
+  font-size: 28rpx;
+  line-height: 53rpx;
+  color: #333;
+  border-bottom: 1rpx solid #ddd;
+}
+
+.form-item .prepend {
+  width: 120rpx;
+}
+
+.code {
+  width: 154rpx;
+  height: 50rpx;
+  font-size: 24rpx;
+  padding: 0;
+  line-height: 50rpx;
+  background: #9b9b9b;
+}

@@ -1,0 +1,96 @@
+page {
+  background: #efefef;
+}
+
+.banner {
+  position: relative;
+  height: 310rpx;
+  background: #9b9b9b;
+}
+
+.upload-box {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 75rpx;
+  margin: auto;
+  width: 250rpx;
+  text-align: center;
+}
+
+.upload-box image {
+  width: 116rpx;
+  height: 116rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.form {
+  margin-top: 30rpx;
+  padding: 0 30rpx 30rpx;
+}
+
+.form-item {
+  font-size: 32rpx;
+  color: #4a4a4a;
+}
+
+.form-item:first-child .input-wrap {
+  border-top: 1rpx solid #ddd;
+}
+
+.input-wrap {
+  padding: 10rpx 0;
+  border-bottom: 1rpx solid #ddd;
+}
+
+.prepend {
+  margin-left: 30rpx;
+  width: 180rpx;
+}
+
+.input {
+  line-height: 53rpx;
+}
+
+.form-item .submit {
+  margin-top: 50rpx;
+  height: 86rpx;
+  background: #4bd1db;
+  font-size: 34rpx;
+  line-height: 86rpx;
+  border-radius: 43rpx;
+}
+
+.add {
+  margin: 20rpx;
+}
+
+.add .image-wrap {
+  margin: auto;
+  width: 52rpx;
+  height: 52rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.pa {
+  padding: 40rpx;
+  border: none;
+  background: #fff;
+  margin: 20rpx 0;
+}
+
+.pa .f-l {
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.pa .f-r {
+  box-sizing: border-box;
+  width: 460rpx;
+  min-height: 150rpx;
+  padding: 0 30rpx;
+  font-size: 28rpx;
+  color: #9b9b9b;
+}

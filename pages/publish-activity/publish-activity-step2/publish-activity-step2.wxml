@@ -1,0 +1,42 @@
+<view class='banner'>
+  <view class='upload-box'>
+    <image src='/images/icon-05.jpg'></image>
+    <view>请上传活动标题图片</view>
+  </view>
+</view>
+
+<view class='form'>
+  <form bindsubmit='submit'>
+    <view class='form-item'>
+      <view class='input-wrap'>
+        <view class='prepend'>活动标题</view>
+        <view class='input'>
+          <input placeholder='请输入活动标题'></input>
+        </view>
+      </view>
+    </view>
+
+    <block wx:for="{{lists}}" wx:key="unique">
+      <view class='form-item pa clearfix'>
+        <view class='f-l'>
+          <image class='full' src='/images/icon-05.jpg' data-id="{{index}}" bindtap='upload'></image>
+        </view>
+        <view class='f-r'>
+          <textarea placeholder='点击添加文字' data-id="{{index}}" bindinput='input'></textarea>
+        </view>
+      </view>
+    </block>
+
+    <view class='form-item add no-border'>
+      <view class='image-wrap'>
+        <image class='full' src='/images/icon-05.jpg' bindtap='addParagraph'></image>
+      </view>
+    </view>
+
+    <view class='form-item no-border'>
+      <view class='btn-wrap'>
+        <button class='submit' type='primary' form-type='submit'>完成</button>
+      </view>
+    </view>
+  </form>
+</view>

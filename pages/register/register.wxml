@@ -1,0 +1,44 @@
+<view class='box'>
+  <view class='title'>{{title}}</view>
+  <view class='content' wx:if="{{!phone}}">
+    <view class='avatar'>
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <view class='nickname'>
+      <open-data type="userNickName"></open-data>
+    </view>
+    <view class='btn-group'>
+      <button type='primarty' open-type='getUserInfo' bindgetuserinfo='login'>快速注册,马上报名</button>
+      <button plain bindtap='usePhone'>手机号码注册</button>
+    </view>
+  </view>
+  <view class='content' wx:else style='padding-top:35rpx;'>
+    <form>
+      <view class='form-item'>
+        <view class='input-wrap'>
+          <view class='prepend'>手机号</view>
+          <view class='input'>
+            <input></input>
+          </view>
+        </view>
+      </view>
+      <view class='form-item'>
+        <view class='input-wrap'>
+          <view class='prepend'>验证码</view>
+          <view class='append'>
+            <button class='code'>获取验证码</button>
+          </view>
+          <view class='input'>
+            <input></input>
+          </view>
+        </view>
+      </view>
+      <view class='form-item no-border' style='margin-top:37rpx;'>
+        <view class='btn-group'>
+          <button type='primarty' bindtap='loginUsePhone'>提交</button>
+          <button plain bindtap='usePhone'>放弃报名</button>
+        </view>
+      </view>
+    </form>
+  </view>
+</view>
