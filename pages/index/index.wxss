@@ -4,8 +4,24 @@ page {
 }
 
 .body {
-  padding: 0 25rpx;
   overflow: hidden;
+}
+
+/* 地址栏 */
+
+.address {
+  background: #fff;
+}
+
+.address>image {
+  width: 20rpx;
+  height: 30rpx;
+  margin-top: 12rpx;
+  margin-left: 15rpx;
+}
+
+.address input {
+  padding-left: 0.6em;
 }
 
 .search-wrap {
@@ -47,7 +63,6 @@ page {
 }
 
 .banner>swiper {
-  /* width: 750rpx; */
   width: 100%;
   height: 190rpx;
 }
@@ -61,20 +76,21 @@ page {
 /*导航  */
 
 .catagory {
-  /* height: 200rpx; */
   padding: 20rpx 0;
   justify-content: flex-start;
 }
 
-.catagory .ul{
+.catagory .ul {
   flex-wrap: wrap;
 }
-.catagory .ul .li{
+
+.catagory .ul .li {
   width: 16%;
   margin: 10rpx 1.66%;
   text-align: center;
 }
-.catagory .li image{
+
+.catagory .li image {
   width: 98rpx;
   height: 98rpx;
   margin: auto;
@@ -82,21 +98,20 @@ page {
   color: #f9f9f9;
   border-radius: 50%;
 }
-.catagory .li view{
+
+.catagory .li view {
   font-size: 26rpx;
   color: #0f0f0f;
 }
-.catagory .li.on view{
+
+.catagory .li.on view {
   color: pink;
 }
+
 /* 活动列表  */
 
-.activity {
-  height: 290rpx;
-}
-
 .activity .headimg {
-  height: 160rpx;
+  height: 350rpx;
 }
 
 .activity .headimg>image {
@@ -105,24 +120,30 @@ page {
 }
 
 .activity .title {
-  margin: 10rpx auto;
-  font-size: 38rpx;
+  margin-top: 30rpx;
+  font-size: 28rpx;
   color: #333;
-  text-indent: 0.28em;
 }
 
 .activity .des {
-  padding: 0 20rpx;
+  padding: 20rpx 0;
   justify-content: flex-start;
-  font-size: 30rpx;
-  color: #4a4a4a;
+  font-size: 18rpx;
+  color: #666;
 }
 
 .activity .des>view {
-  padding: 5rpx 10rpx;
+  margin: 0 5rpx;
+  vertical-align: middle;
 }
 
 .bg-p {
-  border-radius: 10rpx;
+  border-radius: 4rpx;
+  padding: 4rpx 10rpx;
   color: #fff;
+}
+
+.login {
+  margin-top: 250rpx;
+  width: 500rpx;
 }

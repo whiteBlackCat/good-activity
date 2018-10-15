@@ -1,7 +1,8 @@
 import {
   imgPrefix,
   navPrefix,
-} from '../../utils/config.js'
+} from '../../API/config.js'
+import login from '../../API/login'
 
 const app = getApp()
 const hash = new Map()
@@ -16,7 +17,9 @@ Page({
     catagoryIndex: 0,
     catagoryList: [],
     imgUrls: [1],
-    activities: [1]
+    activities: [1],
+    location: null,
+    isLogin: app.globalData.isLogin
   },
   // 切换类目
   catagoryChange(e) {
@@ -24,6 +27,11 @@ Page({
       catagoryIndex: e.currentTarget.dataset.index
     })
     this.__getActivity(e.currentTarget.dataset.code)
+  },
+  login(res) {
+    console.log(res)
+    return
+    login(res)
   },
   // 根据code获取某类下所有活动
   __getActivity(code) {
@@ -84,7 +92,8 @@ Page({
       }
     })
     this.__getBanner()
-    // 
+    // 获取位置
+    this._getLocation()
   },
   onUnload() {
     hash.clear()
@@ -115,6 +124,17 @@ Page({
             resolve(res.data)
           }
         })
+    })
+  },
+  _getLocation() {
+    let that = this
+    wx.getLocation({
+      type: 'gcj02',
+      success: function(res) {
+        that.setData({
+          location: res
+        })
+      }
     })
   }
 })
