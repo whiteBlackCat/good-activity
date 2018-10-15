@@ -1,6 +1,6 @@
 import login from '../../API/login.js'
 import loginOut from '../../API/loginOut.js'
-import getPrevPage from '../../API/getPrevPage.js'
+import getPrevPage from '../../utils/getPrevPage.js'
 
 Page({
   data: {
