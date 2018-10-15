@@ -1,6 +1,4 @@
-import {
-  host
-} from './config'
+const host = 'https://www.jdz6666.com/' 
 
 export default {
   banner: `${host}V1wxslideList`, // 首页轮播
